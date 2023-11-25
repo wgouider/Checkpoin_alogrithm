@@ -1,0 +1,55 @@
+// Alogorithme qui calcule la longeu d'une phrase donnée en input en nombre de caractères//
+ALGORITHM Length_of_sentence
+VAR
+    i: interger := 0;
+    Nb_of_car:INTEGER:=0;
+    sentence1 : CHAR;
+    
+    
+
+BEGIN
+    WHILE (sentence1[i] <> '.') DO
+
+        IF (sentence1[i]<>' ') THEN
+           Nb_of_car++;
+        END_IF
+        i++;
+    END_WHILE
+    Write("Le nombre de caractères dans la pharse sans tenir compte des espaces est:" Nb_of_car);
+    
+END
+
+// Alogorithme qui calcule le nombre de verbes contenus dans une phrase //
+
+ALGORITHM Number_of Words in a sentence
+VAR
+    
+    Nb_of_words : INTEGER:=0;
+    sentence2 : STRING;
+    j: INTEGER:=0;
+BEGIN
+    WHILE (sentence2[j] <> ".") DO
+        Nb_of_words++;
+        j++;
+
+    END_WHILE
+        Write ("Le nombre de mots dans cette phrase est :" Nb_of_words);
+END
+
+// Alogorithme qui calcule le nombre de voyelles contenues dans une phrase //
+
+ALGORITHM Number_Of_Vowels
+VAR
+    k : INTEGER :=0;
+    Nb_Of_Vowels: INTEGER :=0;
+    Sentence3: CHAR;
+    
+BEGIN
+    WHILE (Sentence3[k] <>'.') DO
+        IF (Sentence3[k] = "a" || Sentence3[k] = "e" || Sentence3[k] = "o" || Sentence3[k] = "u" || Sentence3[k] = "i") THEN
+             Nb_Of_Vowels++;
+        END_IF
+        k++;
+
+    END_WHILE
+END
