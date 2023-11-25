@@ -8,6 +8,7 @@ VAR
     
 
 BEGIN
+    read(sentence1)
     WHILE (sentence1[i] <> '.') DO
 
         IF (sentence1[i]<>' ') THEN
@@ -28,6 +29,7 @@ VAR
     sentence2 : STRING;
     j: INTEGER:=0;
 BEGIN
+    read (sentence2)    
     WHILE (sentence2[j] <> ".") DO
         Nb_of_words++;
         j++;
